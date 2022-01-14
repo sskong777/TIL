@@ -154,17 +154,36 @@ $ git log -숫자		   //숫자만큼만 보여줌
 #### 1. git clone
 
 * git init, git remote, add 동작이 포함된 내려받기 명령어
+
+  * git clone = git init + renite add origin + git pull origin master
+
 * 아무것도 없는 상태일 때 사용한다.
+
 * `git clone <리모트레포주소>`
+
+  `git cloen https://123.com`
 
 #### 2. git pull
 
 * remote 서버의 정보를 내려받는 명령어
+
 * git이 적용되어 있어야 한다. (.git폴더가 존재해야함)
+
 * remote 정보가 등록되어 있어야 한다.
+
 * `git pull <리모트별명> <브랜치명>`
 
+  `git pull origin master`
 
+#### 3. git stash
+
+* 완료되지 않은 작업을 commit하지 않고 저장소에 따로 보관하는 작업(commit 하기전에 수행하는 것이 낫다.)
+* 현재 상태를 Working Directory에 수정할 파일들만 저장하고 최근version 상태로 돌아간다.
+* `$ git stash list`  : stash 리스트 확인
+
+* `$ git stash apply <stash ID>` : 해당 stash로 돌아가기
+* `$ git stash drop <stash ID>` : stash list 지우기
+* `$ git stash pop` : apply와 drop을 동시에(스택방식)
 
 
 
@@ -203,6 +222,14 @@ $ git log -숫자		   //숫자만큼만 보여줌
 
 
 
+
+
+
+
+
+
+
+---
 
 
 
